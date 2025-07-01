@@ -81,14 +81,19 @@ function InitializeCanvas() {
     var newwidth = window.innerWidth * newscale;
     var newheight = window.innerHeight * newscale;
 
-    // if (elem.width != newwidth || elem.height != newheight || scale != newscale) {
-    //     // resizing a canvas clears it, so do it only when it's dimensions have changed.
-    //     scale = newscale;
-    //     elem.width = newwidth;
-    //     elem.height = newheight;
-    //     elem.style.width = window.innerWidth + "px";
-    //     elem.style.height = window.innerHeight + "px";
-    // }
+    if (elem.width != newwidth || elem.height != newheight || scale != newscale) {
+        // resizing a canvas clears it, so do it only when it's dimensions have changed.
+        
+        console.log("Old width: " + elem.width + " New width: " + newwidth);
+        console.log("Old height: " + elem.height + " New height: " + newheight);
+        console.log("window.innerWidth: " + window.innerWidth + " window.innerHeight: " + window.innerHeight);
+        
+        scale = newscale;
+        elem.width = newwidth;
+        elem.height = newheight;
+        elem.style.width = window.innerWidth + "px";
+        elem.style.height = window.innerHeight + "px";
+    }
 }
 
 // function PointerHandler(event) {
