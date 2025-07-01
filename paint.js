@@ -33,46 +33,46 @@ function InitializeApp() {
         InitializeCanvas();
     });
 
-//     document.addEventListener("keyup", function(e) {
-//         switch(e.which) {
-//         // ESC
-//         case 27:
-//             var canvas = document.getElementById("canvas");
-//             canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
-//             break;
+    document.addEventListener("keyup", function(e) {
+        switch(e.which) {
+        // ESC
+        case 27:
+            var canvas = document.getElementById("canvas");
+            canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
+            break;
 
-//         // p
-//         case 80:
-//             pointMode = !pointMode;
-//             window.location.hash = pointMode ? "#points" : "";
-//             break;
+        // p
+        case 80:
+            pointMode = !pointMode;
+            window.location.hash = pointMode ? "#points" : "";
+            break;
 
-//         // f
-//         case 70:
-//             enableForce = !enableForce;
-//             break;
+        // f
+        case 70:
+            enableForce = !enableForce;
+            break;
 
-//         // a
-//         case 65:
-//             drawTouchMajor = !drawTouchMajor;
-//             break;
+        // a
+        case 65:
+            drawTouchMajor = !drawTouchMajor;
+            break;
 
-//         // c
-//         case 67:
-//             drawCoalesced = !drawCoalesced;
-//             break;
+        // c
+        case 67:
+            drawCoalesced = !drawCoalesced;
+            break;
 
-//         // enter
-//         case 13:
-//             if (document.documentElement.webkitRequestFullscreen) {
-//                 if (document.webkitFullscreenElement)
-//                     document.webkitCancelFullScreen();
-//                 else
-//                     document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-//             }
-//         }
-//     });
-// }
+        // enter
+        case 13:
+            if (document.documentElement.webkitRequestFullscreen) {
+                if (document.webkitFullscreenElement)
+                    document.webkitCancelFullScreen();
+                else
+                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        }
+    });
+}
 
 function InitializeCanvas() {
     var elem = document.getElementById("canvas");
