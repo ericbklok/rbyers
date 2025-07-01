@@ -91,8 +91,8 @@ function InitializeCanvas() {
         console.log("window.innerWidth: " + window.innerWidth + " window.innerHeight: " + window.innerHeight);
         
         scale = newscale;
-        elem.width = newwidth;
-        elem.height = newheight;
+        // elem.width = newwidth;
+        // elem.height = newheight;
         elem.style.width = window.innerWidth + "px";
         elem.style.height = window.innerHeight + "px";
     }
