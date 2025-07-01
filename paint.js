@@ -11,7 +11,7 @@ var mousePressed = false;
 var drawCoalesced = (window.location.hash == "#cpoints");
 
 function InitializeApp() {
-    InitializeCanvas();
+    // InitializeCanvas();
 
 //     var elem = document.getElementById("canvas");
 //     if (window.PointerEvent && !pointerEventDisabledMode) {
