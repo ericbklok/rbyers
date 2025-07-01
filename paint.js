@@ -32,8 +32,6 @@ function InitializeApp() {
     // window.addEventListener("resize", function(e) {
     //     InitializeCanvas();
     // });
-
-    console.log("loaded");
     
 //     document.addEventListener("keyup", function(e) {
 //         switch(e.which) {
@@ -74,7 +72,9 @@ function InitializeApp() {
 //             }
 //         }
 //     });
-// }
+
+    console.log("loaded");
+}
 
 function InitializeCanvas() {
     var elem = document.getElementById("canvas");
