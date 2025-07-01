@@ -63,14 +63,14 @@ function InitializeApp() {
             break;
 
         // enter
-        case 13:
-            if (document.documentElement.webkitRequestFullscreen) {
-                if (document.webkitFullscreenElement)
-                    document.webkitCancelFullScreen();
-                else
-                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-            }
-        }
+        // case 13:
+        //     if (document.documentElement.webkitRequestFullscreen) {
+        //         if (document.webkitFullscreenElement)
+        //             document.webkitCancelFullScreen();
+        //         else
+        //             document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+        //     }
+        // }
     });
 }
 
