@@ -70,7 +70,7 @@ function InitializeApp() {
         //         else
         //             document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
         //     }
-        // }
+        }
     });
 }
 
