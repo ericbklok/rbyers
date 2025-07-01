@@ -29,9 +29,9 @@ function InitializeApp() {
 //         });
 //     }
 
-//     window.addEventListener("resize", function(e) {
-//         InitializeCanvas();
-//     });
+    window.addEventListener("resize", function(e) {
+        InitializeCanvas();
+    });
 
 //     document.addEventListener("keyup", function(e) {
 //         switch(e.which) {
