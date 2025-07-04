@@ -196,7 +196,7 @@ function drawTouch(touch, eventType, coalesced) {
     context.save();
     context.translate(touch.pageX * scale, touch.pageY * scale);
     context.rotate(rotationAngle);
-    context.scale(1, radiusY/radiusX);
+    context.scale(scale, scale);
     context.beginPath();
     context.arc(0, 0, radiusX, 0, 2.0 * Math.PI, false);
     context.closePath();
